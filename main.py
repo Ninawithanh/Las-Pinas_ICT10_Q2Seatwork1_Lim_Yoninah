@@ -4,7 +4,7 @@ def candidate_checker(e):
     club_members = ['anthea alavado', 'aria bonsol', 'gabi ibarra', 'cai torrejon', 'jillianne singh', 'yoninah lim', 'jadenne saquido', 'lexi joaquin', 'yijin jeong', 'shimeia sanchez']
     f_name = document.getElementById('first_name').value
     l_name = document.getElementById('last_name').value
-    candidate = f_name + ' ' + l_name
+    candidate = f'{f_name.strip()} {l_name.strip()}'
     member_checker = candidate.lower() in club_members
 
     messages = (f'Sorry {candidate}, your name is not on the list.', 
