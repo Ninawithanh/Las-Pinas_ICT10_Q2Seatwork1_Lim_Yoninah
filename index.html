@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+        <title> Q2 Seatwork 1 </title>
+        
+        <style> 
+            body {
+                margin: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: rgb(62, 88, 62);
+            }
+
+            .container {
+                width: 75%; 
+                max-width: 800px;
+                background-color: rgb(194, 235, 194);
+                margin: 55px auto;
+                border-radius: 15px;
+                padding: 15px;
+            }
+
+            header {
+                background-color: rgb(136, 169, 136);
+                color: white;
+                height: 150px;
+                padding: 40px;
+            }
+
+            input[type="text"],
+            input[type="button"],
+            select {
+                width: 100%;
+                align-items: center;
+                background-color: rgb(209, 226, 209);
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 15px 18px;
+                margin: 10px 0;
+                box-sizing: border-box;
+        }
+        </style>
+    </head>
+    <body>
+
+    <div class="container">
+
+        <header>
+            <div class="reactor"></div>
+            <h1> Luminara Dance Club Checker </h1>
+            <p> Candidate Verficiation System </p>
+        </header>
+
+        <main>
+            <form>
+                <input type="text" id="first_name" placeholder="Enter your First Name"> 
+                <br>
+                <input type="text" id="last_name" placeholder="Enter your Last Name"> 
+                <br>
+                <input type="button" py-click="candidate_checker" value="Enter"> 
+                <br>
+            </form>
+
+            <div id="result"></div>
+        </main>
+
+        <footer>
+            &copy: 2026 <span> Luminara Dance Club </span> &bull; Seatwork 1 &bull; 2nd Quarter
+        </footer>
+
+        <py-script src="main.py"></py-script>
+
+    </div>
+        
+    </body>
+    </html>
