@@ -10,4 +10,4 @@ def candidate_checker(e):
     messages = (f'Sorry {candidate}, your name is not on the list.', 
                 f'Congratulations,{candidate}! You are now part of the Luminara Dance Club!') 
 
-document.getElementById('result').innerHTML=messages[member_checker]
+    document.getElementById('result').innerHTML = messages[member_checker]
